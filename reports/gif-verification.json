@@ -1,11 +1,12 @@
 {
   "source": "docs/demo.mp4",
   "source_sha256": "d4d6815a4527d035c2f271471da3426dddf22e89b4b334bf119884d09e056161",
-  "gif_sha256": "9b780d5399e44ca187d28ddd453bd24a510e8227b31f830b42527633bbb5b8fc",
-  "bytes": 310896,
-  "duration_seconds": 30.0,
+  "gif_sha256": "488a469bd79eab4040630e51c64d9d22ad1b46c8a9d5d68d1b476b4b85ee8840",
+  "bytes": 291242,
+  "duration_seconds": 20.0,
   "width": 1080,
   "height": 676,
-  "frame_count": 60,
-  "caption": "Edited replay of captured CLI outputs in deterministic fixture mode. This is not live model inference."
+  "frame_count": 40,
+  "caption": "Edited replay of captured CLI outputs in deterministic fixture mode. This is not live model inference.",
+  "excerpt": "Workflow explanation, actual demo output and evaluation output; test-only slides omitted"
 }

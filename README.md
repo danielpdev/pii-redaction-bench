@@ -6,6 +6,12 @@ Span-level evaluation of synthetic PII detection and masking.
 
 **Role focus:** AI Evaluation / Data Processing. **Status:** working local portfolio implementation, with synthetic data.
 
+## Demo
+
+![How PII Redaction Bench works](docs/demo.gif)
+
+Edited replay of captured CLI outputs in deterministic fixture mode. This is not live model inference. [Full recording](docs/demo.mp4). Rebuild with `./scripts/render_gif.sh` (FFmpeg required).
+
 ## The engineering decision
 
 The baseline returns typed character spans. Redaction validates non-overlapping bounds. Evaluation uses exact span matches and reports false positives and misses, including known unsupported classes.

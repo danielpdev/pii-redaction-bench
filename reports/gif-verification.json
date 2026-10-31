@@ -1,0 +1,11 @@
+{
+  "source": "docs/demo.mp4",
+  "source_sha256": "d4d6815a4527d035c2f271471da3426dddf22e89b4b334bf119884d09e056161",
+  "gif_sha256": "9b780d5399e44ca187d28ddd453bd24a510e8227b31f830b42527633bbb5b8fc",
+  "bytes": 310896,
+  "duration_seconds": 30.0,
+  "width": 1080,
+  "height": 676,
+  "frame_count": 60,
+  "caption": "Edited replay of captured CLI outputs in deterministic fixture mode. This is not live model inference."
+}

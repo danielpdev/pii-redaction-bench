@@ -1,0 +1,76 @@
+{
+  "mode": "fixture",
+  "python": "3.12.13",
+  "recorded_at": "2026-10-31T13:52:23.113308+00:00",
+  "elapsed_seconds": 0.0003,
+  "result": {
+    "examples": [
+      {
+        "text": "Email alex@example.test today.",
+        "redacted": "Email [EMAIL] today."
+      },
+      {
+        "text": "Call +34 612 345 678 tomorrow.",
+        "redacted": "Call [PHONE] tomorrow."
+      },
+      {
+        "text": "The owner is Alex Example.",
+        "redacted": "The owner is Alex Example."
+      },
+      {
+        "text": "Ticket 123456 is closed.",
+        "redacted": "Ticket 123456 is closed."
+      },
+      {
+        "text": "Write sam.demo@example.test or billing@example.test.",
+        "redacted": "Write [EMAIL] or [EMAIL]."
+      },
+      {
+        "text": "No personal data in this sentence.",
+        "redacted": "No personal data in this sentence."
+      },
+      {
+        "text": "Email alex [at] example [dot] test.",
+        "redacted": "Email alex [at] example [dot] test."
+      }
+    ],
+    "evaluation": {
+      "passed": true,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "true_positives": 4,
+        "false_positives": 0,
+        "false_negatives": 2,
+        "errors": [
+          {
+            "id": "3",
+            "false_positives": [],
+            "misses": [
+              [
+                "NAME",
+                13,
+                25
+              ]
+            ],
+            "redacted": "The owner is Alex Example."
+          },
+          {
+            "id": "7",
+            "false_positives": [],
+            "misses": [
+              [
+                "EMAIL",
+                6,
+                34
+              ]
+            ],
+            "redacted": "Email alex [at] example [dot] test."
+          }
+        ]
+      },
+      "case_count": 7,
+      "limitation": "Baseline recognizes formatted emails and one international phone shape. It intentionally misses names and obfuscated email. Not an anonymization guarantee."
+    }
+  }
+}

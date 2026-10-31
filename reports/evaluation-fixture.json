@@ -1,0 +1,44 @@
+{
+  "mode": "fixture",
+  "python": "3.12.13",
+  "recorded_at": "2026-10-31T13:50:43.662142+00:00",
+  "elapsed_seconds": 0.0002,
+  "result": {
+    "passed": true,
+    "metrics": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "errors": [
+        {
+          "id": "3",
+          "false_positives": [],
+          "misses": [
+            [
+              "NAME",
+              13,
+              25
+            ]
+          ],
+          "redacted": "The owner is Alex Example."
+        },
+        {
+          "id": "7",
+          "false_positives": [],
+          "misses": [
+            [
+              "EMAIL",
+              6,
+              34
+            ]
+          ],
+          "redacted": "Email alex [at] example [dot] test."
+        }
+      ]
+    },
+    "case_count": 7,
+    "limitation": "Baseline recognizes formatted emails and one international phone shape. It intentionally misses names and obfuscated email. Not an anonymization guarantee."
+  }
+}

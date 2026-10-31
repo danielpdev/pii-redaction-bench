@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "text": "Email alex@example.test today.",
+    "spans": [
+      {
+        "type": "EMAIL",
+        "start": 6,
+        "end": 23
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "text": "Call +34 612 345 678 tomorrow.",
+    "spans": [
+      {
+        "type": "PHONE",
+        "start": 5,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "text": "The owner is Alex Example.",
+    "spans": [
+      {
+        "type": "NAME",
+        "start": 13,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "text": "Ticket 123456 is closed.",
+    "spans": []
+  },
+  {
+    "id": "5",
+    "text": "Write sam.demo@example.test or billing@example.test.",
+    "spans": [
+      {
+        "type": "EMAIL",
+        "start": 6,
+        "end": 27
+      },
+      {
+        "type": "EMAIL",
+        "start": 31,
+        "end": 51
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "text": "No personal data in this sentence.",
+    "spans": []
+  },
+  {
+    "id": "7",
+    "text": "Email alex [at] example [dot] test.",
+    "spans": [
+      {
+        "type": "EMAIL",
+        "start": 6,
+        "end": 34
+      }
+    ]
+  }
+]
